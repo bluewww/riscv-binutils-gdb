@@ -392,6 +392,7 @@ enum riscv_insn_class
    INSN_CLASS_XPULP_VECT_GAP8,
    INSN_CLASS_XPULP_VECT_GAP9,
    INSN_CLASS_XPULP_NN,
+   INSN_CLASS_XPULP_TNN,
    INSN_CLASS_XPULP_BITREV,
    INSN_CLASS_XPULP_FINX_GAP9,
    INSN_CLASS_XPULP_FHALF_GAP9,
@@ -488,6 +489,7 @@ enum riscv_insn_class
   INSN_CLASS(VECT_GAP8, "xpulpvectgap8")				\
   INSN_CLASS(VECT_GAP9, "xpulpvectgap9")				\
   INSN_CLASS(NN, "xpulpnn")						\
+  INSN_CLASS(TNN, "xpulptnn")						\
   INSN_CLASS(BITREV, "xpulpbitrev")					\
   INSN_CLASS(FINX_GAP9, "xpulpfinxgap9")				\
   INSN_CLASS(FHALF_GAP9, "xpulpfhalfgap9")				\
