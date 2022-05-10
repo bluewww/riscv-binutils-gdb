@@ -1723,6 +1723,26 @@ const struct riscv_opcode riscv_opcodes[] =
 {"pv.mlsdotsp.c.2",   0, INSN_CLASS_XPULP_NN, "d,s,t", MATCH_V_OP_SDOTUSP_2|MATCH_V_OP_ML_C_VV,  MASK_V_OP,  match_opcode, 0},
 {"pv.mlsdotsp.c.3",   0, INSN_CLASS_XPULP_NN, "d,s,t", MATCH_V_OP_SDOTUSP_3|MATCH_V_OP_ML_C_VV,  MASK_V_OP,  match_opcode, 0},
 
+/* Xpulpnn extensions v3 */
+/***********************************************************************************************************************/
+/**************************************     Xpulpnn  MAC&LOADv3      ***************************************************/
+{"pv.smlsdotup.h",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTUP | MATCH_V_OP_ML_H_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotup.b",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTUP | MATCH_V_OP_ML_B_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotup.n",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTUP | MATCH_V_OP_ML_N_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotup.c",    0, INSN_CLASS_XPULP_NN, "d,s,bi",  MATCH_V_OP_MLSDOTUP | MATCH_V_OP_ML_C_VV,  MASK_V_OP,  match_opcode,  0},
+{"pv.smlsdotusp.h",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTUSP| MATCH_V_OP_ML_H_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotusp.b",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTUSP| MATCH_V_OP_ML_B_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotusp.n",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTUSP| MATCH_V_OP_ML_N_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotusp.c",   0, INSN_CLASS_XPULP_NN, "d,s,bi",  MATCH_V_OP_MLSDOTUSP| MATCH_V_OP_ML_C_VV,  MASK_V_OP,  match_opcode,  0},
+{"pv.smlsdotsup.h",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTSUP| MATCH_V_OP_ML_H_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotsup.b",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTSUP| MATCH_V_OP_ML_B_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotsup.n",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTSUP| MATCH_V_OP_ML_N_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotsup.c",   0, INSN_CLASS_XPULP_NN, "d,s,bi",  MATCH_V_OP_MLSDOTSUP| MATCH_V_OP_ML_C_VV,  MASK_V_OP,  match_opcode,  0},
+{"pv.smlsdotsp.h",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTSP | MATCH_V_OP_ML_H_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotsp.b",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTSP | MATCH_V_OP_ML_B_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotsp.n",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTSP | MATCH_V_OP_ML_N_VV,	 MASK_V_OP,	 match_opcode,	0},
+{"pv.smlsdotsp.c",    0, INSN_CLASS_XPULP_NN, "d,s,bi",  MATCH_V_OP_MLSDOTSP | MATCH_V_OP_ML_C_VV,  MASK_V_OP,  match_opcode,  0},
+
 /*
 {"p.avgu",           0, INSN_CLASS_XPULP_V3, "d,s,t",        MATCH_AVGU,                             MASK_PALU,      match_opcode,   0},
 {"pv.ball",             0, INSN_CLASS_XPULP_V3,  "s,p",         MATCH_BEQM1,                    MASK_BEQM1|MASK_RS2,    match_opcode,   },
