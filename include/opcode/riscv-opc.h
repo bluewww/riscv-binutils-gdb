@@ -910,6 +910,7 @@
 #define MATCH_MAXU  0x04007033
 
 #define MATCH_ROR   0x08005033
+#define MATCH_THRC  0x08006033
 
 /* Pulpv1 and v2. additional ALU operations with only a single operand */
 #define MASK_PALUS  0xfff0707f
