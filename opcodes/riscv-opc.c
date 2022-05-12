@@ -1749,6 +1749,9 @@ const struct riscv_opcode riscv_opcodes[] =
 {"pv.smlsdotsup.t",   0, INSN_CLASS_XPULP_TNN, "d,s,bi",  MATCH_V_OP_MLSDOTSUP| MATCH_V_OP_ML_T_VV,  MASK_V_OP,  match_opcode,  0},
 {"pv.smlsdotsp.t",    0, INSN_CLASS_XPULP_TNN, "d,s,bi",  MATCH_V_OP_MLSDOTSP | MATCH_V_OP_ML_T_VV,  MASK_V_OP,  match_opcode,  0},
 
+/* Threshold&Compress instruction*/
+{"pv.thrc",           0, INSN_CLASS_XPULP_TNN, "d,s,t", MATCH_THRC,  MASK_PALU,  match_opcode, 0},
+
 /*
 {"p.avgu",           0, INSN_CLASS_XPULP_V3, "d,s,t",        MATCH_AVGU,                             MASK_PALU,      match_opcode,   0},
 {"pv.ball",             0, INSN_CLASS_XPULP_V3,  "s,p",         MATCH_BEQM1,                    MASK_BEQM1|MASK_RS2,    match_opcode,   },
