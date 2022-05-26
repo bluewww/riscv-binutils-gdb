@@ -1739,11 +1739,8 @@ const struct riscv_opcode riscv_opcodes[] =
 {"pv.smlsdotsp.n",		0, INSN_CLASS_XPULP_NN, "d,s,bi",	MATCH_V_OP_MLSDOTSP | MATCH_V_OP_ML_N_VV,	 MASK_V_OP,	 match_opcode,	0},
 {"pv.smlsdotsp.c",    0, INSN_CLASS_XPULP_NN, "d,s,bi",  MATCH_V_OP_MLSDOTSP | MATCH_V_OP_ML_C_VV,  MASK_V_OP,  match_opcode,  0},
 
-/* Compressed MAC instructions */
-{"pv.smlsdotup.t",    0, INSN_CLASS_XPULP_TNN, "d,s,bi",  MATCH_V_OP_MLSDOTUP | MATCH_V_OP_ML_T_VV,  MASK_V_OP,  match_opcode,  0},
-{"pv.smlsdotusp.t",   0, INSN_CLASS_XPULP_TNN, "d,s,bi",  MATCH_V_OP_MLSDOTUSP| MATCH_V_OP_ML_T_VV,  MASK_V_OP,  match_opcode,  0},
-{"pv.smlsdotsup.t",   0, INSN_CLASS_XPULP_TNN, "d,s,bi",  MATCH_V_OP_MLSDOTSUP| MATCH_V_OP_ML_T_VV,  MASK_V_OP,  match_opcode,  0},
-{"pv.smlsdotsp.t",    0, INSN_CLASS_XPULP_TNN, "d,s,bi",  MATCH_V_OP_MLSDOTSP | MATCH_V_OP_ML_T_VV,  MASK_V_OP,  match_opcode,  0},
+/* Compressed MAC instruction */
+{"pv.smlsdotp.t",    0, INSN_CLASS_XPULP_TNN, "d,s,bi",  MATCH_V_OP_MLSDOTUP | MATCH_V_OP_ML_T_VV,  MASK_V_OP,  match_opcode,  0},
 
 /* Threshold&Compress instruction*/
 {"pv.thrc",           0, INSN_CLASS_XPULP_TNN, "d,s,t", MATCH_THRC,  MASK_PALU,  match_opcode, 0},
